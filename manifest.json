@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "thedoodabides87.aur-audit",
+  "name": "AUR Audit",
+  "version": "1.0.0",
+  "author": "TheDoodAbides87",
+  "license": "MIT",
+  "description": "Front-end for aur-audit: see your last malware scan at a glance, run system scans, check AUR packages before installing, and read saved reports.",
+  "homepage": "https://github.com/TheDoodAbides87/aur-audit-omarchy",
+  "kinds": [
+    "bar-widget"
+  ],
+  "entryPoints": {
+    "barWidget": "Panel.qml"
+  },
+  "barWidget": {
+    "displayName": "AUR Audit",
+    "description": "Shows aur-audit's last scan result and blocked installs; opens a panel to run scans and read reports.",
+    "category": "System",
+    "allowMultiple": false,
+    "defaultSection": "right",
+    "defaults": {
+      "staleScanDays": 7
+    },
+    "schema": [
+      {
+        "key": "staleScanDays",
+        "type": "integer",
+        "label": "Remind me to scan after (days)",
+        "min": 1,
+        "max": 90,
+        "step": 1,
+        "defaultValue": 7
+      }
+    ]
+  }
+}
