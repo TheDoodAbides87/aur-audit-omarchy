@@ -55,6 +55,12 @@ panel open, press `s` to scan, `/` to type a package name, and `Esc` to close.
 
 ## Install
 
+1. **Install aur-audit first.** The plugin needs it and does no scanning of
+   its own. Follow [aur-audit's install steps](https://github.com/TheDoodAbides87/aur-audit#install).
+   Without it, the bar icon shows a crossed-out shield and the panel links you
+   there.
+2. Add the plugin:
+
 ```
 omarchy plugin add https://github.com/TheDoodAbides87/aur-audit-omarchy.git --enable
 ```
